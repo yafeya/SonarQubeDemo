@@ -17,7 +17,7 @@ SOURCE_GROUP("Source Files" FILES
             )
 
 INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../imports/googletest/googletest/include"
-					"${CMAKE_CURRENT_SOURCE_DIR}/../importsmports/googletest/googletest"
+					"${CMAKE_CURRENT_SOURCE_DIR}/../imports/googletest/googletest"
         )
         
 #IF(CMAKE_BUILD_TYPE STREQUAL "Debug")
