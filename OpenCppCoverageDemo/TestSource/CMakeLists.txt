@@ -21,58 +21,10 @@ INCLUDE("TestSource.cmake")
 
 INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/./")
 
-#IF(BINARY_BITS EQUAL 64)
-#    IF(CMAKE_BUILD_TYPE STREQUAL "Debug")
-#        LINK_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/log4cpp/x64/Debug"
-#        "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64"
-#        )
-#    ENDIF()
-#    IF(CMAKE_BUILD_TYPE STREQUAL "Release")
-#        LINK_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/log4cpp/x64/Release"
-#        "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64"
-#        )
-#    ENDIF()
-#ENDIF()
-#IF(BINARY_BITS EQUAL 32)
-#    IF(CMAKE_BUILD_TYPE STREQUAL "Debug")
-#        LINK_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/log4cpp/x86/Debug"
-#        "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86"
-#        )
-#    ENDIF()
-#    IF(CMAKE_BUILD_TYPE STREQUAL "Release")
-#        LINK_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/log4cpp/x86/Release"
-#        "${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86"
-#        )
-#    ENDIF()
-#ENDIF()
-
 ADD_LIBRARY(${MY_TARGET_NAME} SHARED
             ${TestSource_SRC})
 
 TARGET_LINK_LIBRARIES(${MY_TARGET_NAME} PRIVATE pthread rt dl)
-
-#IF(BINARY_BITS EQUAL 64)   
-#    TARGET_LINK_LIBRARIES(${MY_TARGET_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/log4cpp/x64/linux/liblog4cpp.a 
-#                                            ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_system.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_chrono.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_filesystem.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_thread.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_date_time.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_regex.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x64/libboost_log.a
-#    )
-#ENDIF()
-#IF(BINARY_BITS EQUAL 32)   
-#    TARGET_LINK_LIBRARIES(${MY_TARGET_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/log4cpp/x86/linux/liblog4cpp.a 
-#                                           ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_system.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_chrono.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_filesystem.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_thread.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_date_time.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_regex.a
-#										    ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../Imports/boostlib/linux/lib_x86/libboost_log.a
-#    )
-#ENDIF()
 
 IF(BINARY_BITS EQUAL 64)
     IF(CMAKE_BUILD_TYPE STREQUAL "Debug")

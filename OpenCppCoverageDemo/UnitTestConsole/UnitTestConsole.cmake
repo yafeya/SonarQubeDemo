@@ -4,15 +4,10 @@
 #
 
 cmake_minimum_required(VERSION 2.8)
-SET(MY_TARGET_NAME TestSource)
-SET(TestSource_SRC 
-	"TestSource.h"
+SET(MY_TARGET_NAME UnitTestConsole)
+SET(UnitTestConsole_SRC 
 	"TestSource.cpp"
 )
-
-SOURCE_GROUP("Header Files" FILES 
-            "TestSource.h"
-            )
 
 SOURCE_GROUP("Source Files" FILES 
 			"TestSource.cpp"

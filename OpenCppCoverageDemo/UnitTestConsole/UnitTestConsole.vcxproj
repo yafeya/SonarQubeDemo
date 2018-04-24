@@ -185,6 +185,12 @@
       <Project>{d20e17e6-9f63-41d7-b0fc-af04bf184e58}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="UnitTestConsole.cmake" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
