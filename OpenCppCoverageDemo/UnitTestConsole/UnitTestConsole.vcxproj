@@ -72,22 +72,22 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\TestSource;..\..\..\..\Imports\googletest\googletest;..\..\..\..\Imports\googletest\googletest\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\TestSource;..\imports\googletest\googletest;..\imports\googletest\googletest\include;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Configuration)/$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\TestSource;..\..\..\..\Imports\googletest\googletest;..\..\..\..\Imports\googletest\googletest\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\TestSource;..\imports\googletest\googletest;..\imports\googletest\googletest\include;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Configuration)/$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\TestSource;..\..\..\..\Imports\googletest\googletest;..\..\..\..\Imports\googletest\googletest\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\TestSource;..\imports\googletest\googletest;..\imports\googletest\googletest\include;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Configuration)/$(Platform)</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>..\TestSource;..\..\..\..\Imports\googletest\googletest;..\..\..\..\Imports\googletest\googletest\include;$(IncludePath)</IncludePath>
+    <IncludePath>..\TestSource;..\imports\googletest\googletest;..\imports\googletest\googletest\include;$(IncludePath)</IncludePath>
     <OutDir>$(SolutionDir)$(Configuration)/$(Platform)</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

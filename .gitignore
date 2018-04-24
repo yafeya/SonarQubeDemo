@@ -6,7 +6,16 @@ Thumbs.db
 
 # build result
 /*/.vs
-/*/x64
-/*/x86
-/*/Debug
-/*/Release
+*.suo
+*.user
+_ReSharper.*/
+*.sdf
+bin/
+obj/
+Debug/
+Release/
+*.opensdf
+*.tlog
+*.log
+/OpenCppCoverageDemo/GoogleTest/googlemock
+/OpenCppCoverageDemo/GoogleTest/googletest
