@@ -14,6 +14,7 @@ INCLUDE("UnitTestConsole.cmake")
 SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
 INCLUDE_DIRECTORIES("${CMAKE_CURRENT_SOURCE_DIR}/./"
+					"${CMAKE_CURRENT_SOURCE_DIR}/../TestSource"
 					"${CMAKE_CURRENT_SOURCE_DIR}/../imports/googletest/googletest/include"
 					"${CMAKE_CURRENT_SOURCE_DIR}/../imports/googletest/googletest"
         )
