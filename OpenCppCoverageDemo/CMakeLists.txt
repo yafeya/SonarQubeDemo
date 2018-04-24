@@ -11,4 +11,4 @@ IF(UNIX)
     ENDIF()
 ENDIF()
 
-ADD_SUBDIRECTORY("TestSource", "TestSource/bin")
+ADD_SUBDIRECTORY("TestSource" "TestSource/bin")
