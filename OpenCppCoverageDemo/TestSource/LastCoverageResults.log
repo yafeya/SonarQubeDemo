@@ -1,0 +1,26 @@
+[2018-04-08 15:23:38] [info] Start Program:
+Path:"tests\TestDemo.exe"
+Arguments:
+Working directory: not set.
+Modules: Selected: * Excluded: 
+Sources: Selected: C:\Mstf\IOLS\Trunk\Prototype\FrankYang\OpenCppCoverageDemo\TestSource Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Html 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2018-04-08 15:23:38] [info] Module: C:\Mstf\IOLS\Trunk\Prototype\FrankYang\OpenCppCoverageDemo\TestSource\tests\TestDemo.exe is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\ntdll.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\kernel32.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\KernelBase.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\sysfer.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\msvcp140d.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\vcruntime140d.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Mstf\IOLS\Trunk\Prototype\FrankYang\OpenCppCoverageDemo\TestSource\tests\TestSource.dll is selected because it matches selected pattern: *
+[2018-04-08 15:23:38] [info] Module: C:\Windows\System32\ucrtbased.dll is selected because it matches selected pattern: *
