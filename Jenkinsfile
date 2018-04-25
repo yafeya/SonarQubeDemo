@@ -10,4 +10,7 @@ node() {
 		sh './build.sh'
 
         }
+        stage("Sonar  Scan"){
+              sh 'sonar-scanner'
+        }
 }
