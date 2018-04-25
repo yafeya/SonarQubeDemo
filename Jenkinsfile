@@ -6,8 +6,7 @@ node() {
 
 
         stage("Package & Code Analysis") {
-            echo env.BRANCH_NAME
-            echo env.BRANCH
+		sh './build.sh'
 
         }
 }
