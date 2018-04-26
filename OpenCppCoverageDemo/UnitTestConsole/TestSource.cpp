@@ -8,6 +8,6 @@ namespace TestDemo
 	}
 
 	TEST(EQ_CONDITION, ADD_EQ_TEST) {
-		ASSERT_EQ(add(1, 2), 4);
+		ASSERT_EQ(add(1, 2), 3);
 	}
 }
