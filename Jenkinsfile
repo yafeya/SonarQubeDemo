@@ -15,4 +15,7 @@ node() {
                 sh 'gcovr -x -r . > OpenCppCoverageDemo/cmake/x64/debug/reports/gcovr_report.xml'
 
         }
+        stage("Analyze Code"){
+              sh 'sonar-scanner' 
+        }
 }
