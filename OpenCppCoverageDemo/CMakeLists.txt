@@ -9,6 +9,15 @@ IF(UNIX)
         SET(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS} -m32")
 		SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m32")
     ENDIF()
+
+    if(CMAKE_COMPILER_IS_GNUCXX)
+       include(CodeCoverage)
+       APPEND_COVERAGE_COMPILER_FLAGS()
+       setup_target_for_coverage(NAME TestSource_coverage
+                                 EXECUTABLE UnitTestConsole
+                                 DEPENDENCIES UnitTestConsole)
+    endif()
+
 ENDIF()
 
 ADD_SUBDIRECTORY("TestSource"		"TestSource/bin")
