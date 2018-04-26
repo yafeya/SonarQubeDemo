@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 2.6)
 PROJECT(TestSourceCmake)
 
 IF(UNIX)
+
+    set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/CMakeModules)
+
     # use c++14 and static link for std c++ library
     SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -static-libstdc++")
 	IF(BINARY_BITS EQUAL 32)
