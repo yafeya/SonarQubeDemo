@@ -6,7 +6,7 @@ cd OpenCppCoverageDemo/cmake/
 ./build.sh
 cd x64/debug/
 make
-make TestSource_coverage
+#make TestSource_coverage
 #cd $ROOT_DIR
 #./OpenCppCoverageDemo/cmake/x64/debug/UnitTestConsole/bin/UnitTestConsole
 #sonar-scanner

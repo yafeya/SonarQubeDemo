@@ -1,16 +1,15 @@
 
 node() {
 
-
         checkout scm
 
-
-        stage("Package & Code Analysis") {
+        stage("Build x64 Debug") {
 		sh 'chmod u+x ./build.sh'
 		sh './build.sh'
-
         }
-        stage("Sonar  Scan"){
-              sh 'sonar-scanner'
+        stage("Perform Unit Tests"){
+                dir('OpenCppCoverageDemo/cmake/x64/debug'){
+                   sh 'make TestSource_coverage'
+                }
         }
 }
