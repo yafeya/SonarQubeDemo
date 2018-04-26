@@ -28,4 +28,50 @@ void SayHello2(string message) {
         else {
                 cout << message << endl;
         }
+
+void SayHello3(string message) {
+        if (message.empty()) {
+                cout << "The input is empty" << endl;
+        }
+        else {
+                cout << message << endl;
+        }
+}
+void SayHello4(string message) {
+        if (message.empty()) {
+                cout << "The input is empty" << endl;
+        }
+        else {
+                cout << message << endl;
+        }
+void SayHello5(string message) {
+        if (message.empty()) {
+                cout << "The input is empty" << endl;
+        }
+        else {
+                cout << message << endl;
+        }
+}
+void SayHello6(string message) {
+        if (message.empty()) {
+                cout << "The input is empty" << endl;
+        }
+        else {
+                cout << message << endl;
+        }
+void SayHello7(string message) {
+        if (message.empty()) {
+                cout << "The input is empty" << endl;
+        }
+        else {
+                cout << message << endl;
+        }
+}
+void SayHello8(string message) {
+        if (message.empty()) {
+                cout << "The input is empty" << endl;
+        }
+        else {
+                cout << message << endl;
+        }
 }
