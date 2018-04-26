@@ -17,7 +17,8 @@ IF(UNIX)
        include(CodeCoverage)
        APPEND_COVERAGE_COMPILER_FLAGS()
        setup_target_for_coverage(NAME TestSource_coverage
-                                 EXECUTABLE UnitTestConsole
+                                 EXECUTABLE UnitTestConsole 
+                                 EXECUTABLE_ARGS --gtest_output=xml:../${PROJECT_BUILD_DIR}/reports
                                  DEPENDENCIES UnitTestConsole)
     endif()
 
