@@ -28,4 +28,9 @@ node() {
               }
               }
         }
+        stage("Package"){
+             echo "package my applications"
+        }
+
+
 }
