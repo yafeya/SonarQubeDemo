@@ -10,6 +10,8 @@ node() {
         stage("Perform Unit Tests"){
                 dir('OpenCppCoverageDemo/cmake/x64/debug'){
                    sh 'make TestSource_coverage'
+                   sh 'gcovr -x -r . > reports/gcovr_report.xml'
                 }
+
         }
 }
